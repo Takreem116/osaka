@@ -1,0 +1,154 @@
+
+:root{
+
+
+    --maincolor: #ff206e ;
+}
+
+
+.header{
+
+      background-image: url('../img/bg_osaka.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+.header .header-content a{
+
+    color:var(--maincolor) ;
+}
+
+.icon{
+
+
+    width: 3rem;
+    height: 3rem;
+   transition:  background-color 1s,border 1s ;
+   cursor:pointer;
+}
+
+.icon:hover{
+    background-color: var(--maincolor);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+
+    color: var(--maincolor);
+}
+.nav-link:focus, .nav-link:hover{
+
+    color: var(--maincolor);
+}
+
+.titel h2{
+
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 10px;
+    color: #cacaca;
+}
+
+.titel h3{
+
+    font-weight: 900;
+}
+
+.about {
+
+    background-image: url(../img/light_dot.jpg);
+}
+
+
+.about-contant p:first-of-type{
+
+    color: var(--maincolor);
+}
+
+
+/* servise */
+
+.servise{
+
+    background-image: url(../img/dark_dot.jpg);
+}
+
+
+
+.servise .titel h2{
+
+    color: #222;
+}
+.servise .titel h3{
+    color: #fff;
+    position: relative;
+}
+
+.servise .servise-item h3::after{
+
+
+    content: '';
+    width: 10%;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    height: 3px;
+    top: 90px;
+    background-color: var(--maincolor);
+    transition: width 1s;
+}
+
+
+
+.servise .servise-item:hover  h3::after{
+    width: 25%; }
+
+
+
+    .servise-item .icon{
+        background-color: #222;
+    }
+.servise-item:hover .icon{
+
+    background-color: var(--maincolor);
+}
+
+
+
+/*  start clients */
+
+
+  .client img {
+
+    width: 100px;
+    height: 100px;
+} 
+
+
+
+
+.carousel-indicators [data-bs-target]{
+height: 30px;
+
+text-indent: 0;
+border-radius: 50%;
+}
+/* end clients */
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+
+    color: var(--maincolor);
+  
+
+}
+
+.nav-tabs .nav-link{
+    color: #222;
+    border: none;
+}
+
+.nav-tabs{
+
+    justify-content: center;
+}
